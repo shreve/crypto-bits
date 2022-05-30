@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  notebook:
+    image: manimcommunity/manim
+    command: "jupyter lab --ip=0.0.0.0"
+    working_dir: /manim/videos
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/manim/videos
+      - /System/Library/Fonts/Supplemental/:/usr/share/fonts

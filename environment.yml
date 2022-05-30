@@ -1,0 +1,6 @@
+name: crypto-bits
+dependencies:
+  - pip
+  - pip:
+    - manim
+    - jupyterlab
